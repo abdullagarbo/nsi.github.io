@@ -1405,7 +1405,7 @@ header.header-bar {
 
 header.header-bar .header-bar-top {
     height: 41px;
-    background: #a9a9aa;
+    background: #f7f7f7;
     font-family: 'Roboto';
     text-align: right;
     font-weight: 400;
@@ -1413,8 +1413,8 @@ header.header-bar .header-bar-top {
 
 header.header-bar .header-bar-top .header-bar-top-element {
     display: inline-block;
-    color: rgba( 255, 255, 255, 0.65 );
-    border-right: 1px solid rgba( 255, 255, 255, 0.12 );
+    color: #000;
+    border-right: 1px solid #000;
     font-size: 12px;
     position: relative;
 }
@@ -1427,12 +1427,12 @@ header.header-bar .header-bar-top .header-bar-top-element:last-child {
 header.header-bar .header-bar-top .header-bar-top-element i {
     display: inline-block;
     font-size: 12px;
-    color: rgba( 255, 255, 255, 0.4 );
+    color: #000;
     margin-right: 15px;
 }
 
 header.header-bar .header-bar-top .header-bar-top-element a {
-    color: rgba( 255, 255, 255, 0.65 );
+    color: #000;
     text-decoration: none;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
@@ -1491,7 +1491,7 @@ header.header-bar .header-bar-bottom .logo {
     width: 200px;
     height: 150px;
     position: absolute;
-    background: #a9a9aa;
+    background: #f7f7f7;
     z-index: 500;
     top: -41px;
     text-align: center;
@@ -1499,6 +1499,16 @@ header.header-bar .header-bar-bottom .logo {
 
 header.header-bar .header-bar-bottom .logo a {
     display: block;
+}
+header.header-bar .header-bar-bottom .logo a .background {
+	margin-top:40px;
+    padding:40px;
+    display: block;
+    background-image: url(file:///C:/Users/devga/Desktop/nsi/assets/img/NSI_LOGO.svg);
+    background-position: center center;
+	background-repeat: no-repeat;
+
+
 }
 
 header.header-bar .header-bar-bottom .logo .logo-middle-helper {
@@ -1510,6 +1520,7 @@ header.header-bar .header-bar-bottom .logo .logo-middle-helper {
 
 header.header-bar .header-bar-bottom .logo img {
     display: inline-block;
+
     vertical-align: middle;
 }
 
@@ -1568,15 +1579,16 @@ header.header-bar .header-bar-bottom .menu > li.current-menu-ancestor:before {
     width: -moz-calc( 100% - 50px );
     width: calc( 100% - 50px );
     height: 2px;
-    background: #9f8c5f;
+    background: #f7f7f7;
     left: 25px;
     top: 0;
 }
 
 header.header-bar .header-bar-bottom .menu .sub-menu {
     position: absolute;
-    width: 200px;
-    left: 10px;
+    width: 150px;
+    height: 50px;
+    left: 15px;
     text-align: left;
     padding: 0;
     display: none;
@@ -1590,8 +1602,8 @@ header.header-bar .header-bar-bottom .menu .sub-menu li {
     display: block;
     text-align: left;
     position: relative;
-    border-bottom: 1px solid #b9a47c;
-    background: #ab9364;
+    border-bottom: 1px solid #f7f7f7;
+    background: #f7f7f7;
     padding: 0;
 }
 
@@ -1608,6 +1620,7 @@ header.header-bar .header-bar-bottom .menu .sub-menu li a {
     text-transform: none;
     font-weight: 300;
     color: #000;
+    border-bottom: 1px solid #000;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     transition: 0.1s;
@@ -1956,7 +1969,7 @@ section.heading-slider .heading-slider-single-slide .heading-slider-single-slide
 section.heading-slider .promotion {
     width: 170px;
     height: 170px;
-    background: #afa896;
+    background: #f7f7f7;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
