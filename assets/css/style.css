@@ -71,7 +71,8 @@
 }
 
 .row.content-padding {
-    padding: 75px 0;
+    padding-top: 75px;
+    padding-bottom: 30px;
 }
 
 .container .container {
