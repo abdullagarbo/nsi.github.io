@@ -16,6 +16,12 @@
     <link rel="stylesheet" type="text/css" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="assets/libs/animate.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+    <style>
+        input[type="radio"]{
+        margin: 0 0px 0 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -123,7 +129,24 @@
                         <section class="form with-padding-top">
 
                             <h2>Skicka Felanmälan</h2>
-                            <p class="centered">Om något inte fungerar som det ska gör du en felanmälan. Du väljer själv om du vill ringa in din felanmälan eller registrera den direkt här på hemsidan.</p>
+                            <h5 style="font-weight: bold">Om skador uppstår i din lägenhet</h5>
+                            <p >Om det uppstår skada eller fel i din lägenhet eller i gemensamma utrymmen, till exempel tvättstuga, 
+                                ska du genast anmäla detta i formuläret nedan. Anlita inte jourhjälp i onödan om åtgärden kan vänta. 
+                                Skador som snabbt förvärras, till exempel vattenläckage och liknande, ska givetvis åtgärdas omgående.
+                                Du är enligt hyreslagen ersättningsskyldig för onormalt slitage och vållande av skada. Det gäller 
+                                även för skador som uppkommer genom att någon som tillhör hushållet eller besöker dig uppträtt 
+                                vårdslöst eller försumligt.</p>
+
+                            <h5 style="font-weight: bold">Brandvarnaren</h5>
+                            <p >Om din lägenhet saknar brandvarnare eller om din brandvarnare inte fungerar ska du kontakta fastighetsskötaren. 
+                                Du är själv ansvarig för att kontrollera att din brandvarnare fungerar och för att rengöra den vid behov. 
+                                Du ska också byta batteri när det är slut.</p> 
+                            
+                            <h5 style="font-weight: bold">Utelåst</h5>
+                            <p >Om du låser dig ute Om du har låst dig ute eller förlorat nycklarna behöver du kontakt med din fastighetsskötare. 
+                                Du får då stå för kostnaden själv, både för nycklar och för själva dörrlåset. 
+                                Ring till fastighetsskötaren om du behöver extranycklar. Du får själv betala kostanden 
+                                för extranycklar.</p>     
                             
                             <form method="post" class="form-active" data-title="New email from your website" data-client-name-field="Name" data-client-email-field="E-mail">                                
 
@@ -132,7 +155,7 @@
                                     <span>
                                         <input type="radio" name="type" value="bostad"> Bostad
                                         <input type="radio" name="type" value="lokal"> Lokal
-                                    </span><br>
+                                    </span>
 
                                     <input type="text" name="Name" placeholder="Namn..." class="form-field" />
                                     <input type="text" name="Adress" placeholder="Adress..." class="form-field" />
@@ -144,21 +167,17 @@
                                 <p class="right">
 
                                     <textarea name="message" rows="10" cols="5" placeholder="Meddelande..." class="form-field"></textarea>
-                                    
-                                    <span class="checkbox-box">                                        
+                                                                 
                                         <span>Får fastighetsskötaren gå in med huvudnyckel ? &nbsp;
-                                            <input type="radio" name="ja"> Ja
-                                            <input type="radio" name="nej"> Nej
-                                        </span>                                                                                
-                                    </span>                                   
-                                    
-                                    <span class="checkbox-box">                                        
-                                        <span>Finns hemma varande husdjur ?  &nbsp;
-                                            <input type="radio" name="ja"> Ja
-                                            <input type="radio" name="nej"> Nej. &nbsp; Om Ja, beskriv djurtyp
-                                        </span>                                        
+                                            <input type="radio" name="type" value="yes"> Ja
+                                            <input type="radio" name="type" value="no"> Nej
+                                        </span><br> 
 
-                                    </span>
+                                        <span>Finns hemma varande husdjur ?  &nbsp;
+                                            <input type="radio" name="type" value="yes"> Ja (Om Ja, beskriv djurtyp)
+                                            <input type="radio" name="type" value="no"> Nej.
+                                        </span>    
+
                                     <input type="text" name="Animal" placeholder="Typ..." />
 
                                     <span class="form-field checkbox-box" data-checked="no" data-field-name="I agree with Terms and Conditions and I've read and agree Privacy Policy" data-value-if-checked="Yes">
