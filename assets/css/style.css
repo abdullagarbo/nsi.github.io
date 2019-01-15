@@ -299,7 +299,7 @@ blockquote.flying p {
 }
 
 blockquote.flying:before {
-    content: ',,';
+    content: '';
     font-size: 62px;
     display: block;
     color: #000;
@@ -5761,6 +5761,11 @@ section.form {
 }
 
 section.form.with-padding-top {
+    padding-top: 75px;
+}
+
+.with-padding-top {
+
     padding-top: 75px;
 }
 
