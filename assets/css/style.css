@@ -5637,6 +5637,7 @@ section.sidebar .widget .contact-details .contact-details-single .contact-detail
  */
 
 section.contact-box {
+    height: 300px;
     margin-bottom: 35px;
     display: block;
     background: #f7f7f7;
